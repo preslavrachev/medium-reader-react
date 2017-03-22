@@ -1,4 +1,4 @@
-package com.mediumreaderreact;
+package com.mediumreaderapp;
 
 import android.app.Application;
 
