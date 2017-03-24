@@ -13,29 +13,25 @@ import {
   ViewStyle,
   TextStyle
 } from 'react-native';
+import ArticleList from './components/ArticleList';
+import ArticleListPresenter from './components/presenter/ArticleListPresenter.js';
 
 interface Props {
 
 }
 
 interface State {
-  
+
 }
 
 export default class MediumReaderApp extends Component<Props, State> {
+  //TODO: Consider retaining the instance for future reuse
+  private ALPWrapper = (props?:any) => new ArticleListPresenter(props);
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native 7!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <ArticleList Presenter={this.ALPWrapper} />
       </View>
     );
   }
