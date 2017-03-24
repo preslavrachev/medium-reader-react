@@ -16,22 +16,15 @@ import {
 import ArticleList from './components/ArticleList';
 import ArticleListPresenter from './components/presenter/ArticleListPresenter.js';
 
-interface Props {
+interface Props {}
 
-}
-
-interface State {
-
-}
+interface State {}
 
 export default class MediumReaderApp extends Component<Props, State> {
-  //TODO: Consider retaining the instance for future reuse
-  private ALPWrapper = (props?:any) => new ArticleListPresenter(props);
-
   render() {
     return (
       <View style={styles.container}>
-        <ArticleList Presenter={this.ALPWrapper} />
+        <ArticleList Presenter={ArticleListPresenter} />
       </View>
     );
   }

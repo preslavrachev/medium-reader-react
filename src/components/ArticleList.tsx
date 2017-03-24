@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 interface Props {
-  Presenter: () => Component<any, any>;
+  Presenter: (articles:any) => JSX.Element;
 }
 
 interface State {
@@ -12,7 +12,7 @@ export default class ArticleList extends Component<Props, State> {
   constructor(props?:Props) {
     super(props);
     this.state = {
-      articles: ['Title 1', 'Title 2']
+      articles: ['Title 1', 'Title 2', 'Title 3', 'Title 4']
     }
   }
 
