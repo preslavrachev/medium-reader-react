@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ArticleBasicInfo from '../model/ArticleBasicInfo';
 import SearchResultsPage from '../model/SearchResultsPage';
 
 interface Props {
@@ -6,22 +7,21 @@ interface Props {
 }
 
 interface State {
-  articles: Array<string>;
+  articles: Array<ArticleBasicInfo>;
 }
 
 export default class ArticleList extends Component<Props, State> {
   constructor(props?:Props) {
     super(props);
     this.state = {
-      articles: ['Title 1', 'Title 2', 'Title 3', 'Title 4']
-    }
+      articles: []
+    };
 
     console.log('https://medium.com/top-stories?format=json');
     this._fetchLatestArticles()
       .then(result => {
-        let postTitles = result.payload.value.posts.map(post => post.title);
-        console.log(postTitles);
-        this.setState({ articles: postTitles });
+        let posts = result.payload.value.posts;
+        this.setState({ articles: posts });
       })
       .catch(err => {
         console.log(`ERROR: ${err}`)
