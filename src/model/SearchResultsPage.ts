@@ -1,4 +1,4 @@
-import ArticleBasicInfo from 'ArticleBasicInfo';
+import ArticleBasicInfo from './ArticleBasicInfo';
 
 class Payload {
   private _value: PayloadValue;
