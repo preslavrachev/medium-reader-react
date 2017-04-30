@@ -18,9 +18,13 @@
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
     "jest": "19.0.2",
-    "react-test-renderer": "15.4.2"
+    "react-test-renderer": "15.4.2",
+    "whatwg-fetch": "^2.0.3"
   },
   "jest": {
+    "automock": false,
+    "testRegex": "./build/__tests__/.*.js$",
+    "rootDir": ".",
     "preset": "react-native"
-  }  
+  }
 }
