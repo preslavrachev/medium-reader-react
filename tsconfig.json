@@ -16,7 +16,9 @@
   "include": [
     "typings/index.d.ts",
     "src/**/*.ts",
-    "src/**/*.tsx"
+    "src/**/*.tsx",
+    "src/__tests__/**/*.js",
+    "src/__mocks__/**/*.*"
   ],
   "exclude": [
     "index.android.js",
