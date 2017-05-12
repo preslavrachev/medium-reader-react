@@ -8,12 +8,12 @@ import Demo from '../__mocks__/demo.js';
 import renderer from 'react-test-renderer';
 
 beforeEach(() => {
+  /* ignore the TS compiler error */
   window.fetch = jest.genMockFunction();
 });
 
 it('renders correctly', (done) => {
-
-  window.fetch.mockReturnValueOnce(
+  (window.fetch as jest.Mock<Response>).mockReturnValueOnce(
     Promise.resolve(
       //new Response(JSON.stringify(mockResponse), { status: 200 })
       new Response('foobar', { status: 200 })
