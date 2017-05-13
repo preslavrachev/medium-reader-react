@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`asserts that the images are present 1`] = `
+Array [
+  "imageId1.jpg",
+  "imageId2.jpg",
+  "imageIdPlaceholder.png",
+]
+`;

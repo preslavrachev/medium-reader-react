@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "payload": {
+    "value": {
+      "posts": [
+        {
+          "title": "Post Title #1",
+          "virtuals": {
+            "previewImage": {
+              "imageId": "imageId1.jpg"
+            }
+          }
+        },
+        {
+          "title": "Post Title #2",
+          "virtuals": {
+            "previewImage": {
+              "imageId": "imageId2.jpg"
+            }
+          }
+        },
+        {
+          "title": "Post Title #3",
+          "virtuals": {}
+        }
+      ]
+    }
+  }
+}
