@@ -6,6 +6,7 @@
         {
           "title": "Post Title #1",
           "virtuals": {
+            "subtitle": "This is the subtitle for post #1",
             "previewImage": {
               "imageId": "imageId1.jpg"
             }
@@ -14,6 +15,7 @@
         {
           "title": "Post Title #2",
           "virtuals": {
+            "subtitle": "This is the subtitle for post #2",
             "previewImage": {
               "imageId": "imageId2.jpg"
             }
@@ -21,7 +23,9 @@
         },
         {
           "title": "Post Title #3",
-          "virtuals": {}
+          "virtuals": {
+            "subtitle": "This is the subtitle for post #3"
+          }
         }
       ]
     }

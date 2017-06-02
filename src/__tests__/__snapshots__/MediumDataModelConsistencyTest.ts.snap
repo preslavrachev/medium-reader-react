@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`asserts that some subtitltes are present 1`] = `
+Array [
+  "This is the subtitle for post #1",
+  "This is the subtitle for post #2",
+  "This is the subtitle for post #3",
+]
+`;
+
 exports[`asserts that the images are present 1`] = `
 Array [
   "imageId1.jpg",
